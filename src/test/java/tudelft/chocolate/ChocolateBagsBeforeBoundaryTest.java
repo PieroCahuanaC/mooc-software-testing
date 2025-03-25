@@ -18,14 +18,15 @@ public class ChocolateBagsBeforeBoundaryTest {
     }
 
     @Test
-    public void bigAndSmallBars() {
-        int result = new ChocolateBags().calculate(5, 3, 17);
-        Assertions.assertEquals(2, result);
+    public void suficienteChocolatePequeño(){
+        int result = new ChocolateBags().calculate(4,2,14);
+        Assertions.assertEquals(4,result);
+    }
+    @Test
+    public void soloChocolatePequeño(){
+        int result = new ChocolateBags().calculate(5,0,5);
+        Assertions.assertEquals(5,result);
     }
 
-    @Test
-    public void onlySmallBars() {
-        int result = new ChocolateBags().calculate(4, 2, 3);
-        Assertions.assertEquals(3, result);
-    }
+
 }
