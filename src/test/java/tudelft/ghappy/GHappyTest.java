@@ -18,11 +18,13 @@ public class GHappyTest {
         Assertions.assertTrue(test1.gHappy("ggxxgg")); //true
     }
 
+    @Test
     public void casiTodosPareja(){
          Assertions.assertFalse(test1.gHappy("xgxggxgg")); //false
     }
 
+    @Test
     public void ningunaPareja(){
-         Assertions.assertFalse(test1.gHappy("xxxxxxxx")); //false
+         Assertions.assertTrue(test1.gHappy("xxxxx")); //false
     }
 }
